@@ -9,7 +9,7 @@ public class ClienteRMI {
 		
 		Registry registry = LocateRegistry.getRegistry("192.168.2.115");
 		FilmesRemoto filme = (FilmesRemoto) registry.lookup("Filme");
-		String resultado = filme.dados("Dramas", "22:00");
+		String resultado = filme.dados("Drama", "22:00");
 		System.out.println(resultado);
 	}
 
